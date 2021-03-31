@@ -1,13 +1,11 @@
-﻿@model bool
+﻿
+@model bool
 
 <span>
-    <i class="glyphicon @(Model ? "glypicon-star" : "glyphicon-star-empty")"
+    <i class="glyphicon @(Model ? "glyphicon-star" : "glyphicon-star-empty")"
        data-toggle="star"
-       data-id="ViewBag.Id"></i>
+       data-id="@ViewBag.Id"></i>
 </span>
-
-
-
 
 
 
