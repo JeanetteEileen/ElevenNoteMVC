@@ -55,12 +55,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202103310104068_InitialCreate.cs" />
+    <Compile Include="Migrations\202103310104068_InitialCreate.Designer.cs">
+      <DependentUpon>202103310104068_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103311613330_InitialMigration.cs" />
+    <Compile Include="Migrations\202103311613330_InitialMigration.Designer.cs">
+      <DependentUpon>202103311613330_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202103310104068_InitialCreate.resx">
+      <DependentUpon>202103310104068_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103311613330_InitialMigration.resx">
+      <DependentUpon>202103311613330_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
