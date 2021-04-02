@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\202103310104068_InitialCreate.cs" />
     <Compile Include="Migrations\202103310104068_InitialCreate.Designer.cs">
@@ -62,6 +63,10 @@
     <Compile Include="Migrations\202103311613330_InitialMigration.cs" />
     <Compile Include="Migrations\202103311613330_InitialMigration.Designer.cs">
       <DependentUpon>202103311613330_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104011835537_AddCategoryClassAndAssociatedProjects.cs" />
+    <Compile Include="Migrations\202104011835537_AddCategoryClassAndAssociatedProjects.Designer.cs">
+      <DependentUpon>202104011835537_AddCategoryClassAndAssociatedProjects.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
@@ -77,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103311613330_InitialMigration.resx">
       <DependentUpon>202103311613330_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104011835537_AddCategoryClassAndAssociatedProjects.resx">
+      <DependentUpon>202104011835537_AddCategoryClassAndAssociatedProjects.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

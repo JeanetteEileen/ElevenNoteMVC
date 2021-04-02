@@ -14,7 +14,8 @@ namespace ElevenNote.Models
         [UIHint("Starred")]
         [Display(Name = "Important")]
         public bool IsStarred { get; set; }
-        [Display(Name="Created")]
+        [Display(Name="Note Category")]
+        public string CategoryName { get; set; }
         public DateTimeOffset? CreatedUtc { get; set; }
     }
 }
